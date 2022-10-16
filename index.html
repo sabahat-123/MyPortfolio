@@ -7,21 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3988e44910.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <script src="portfolio.js" defer></script>
     <title>My Portfolio</title>
 </head>
 <body>
-    <header id="headerSection">
-       <div class="headerContainer">
+    <header id="header">
+       <div class="container">
         <nav>
-            <img src="image/Portfolio.logo.png" class="logo">
+            <img src="image/web-development.png" class="logo" alt="logo">
             <ul>
-                <li><a href="#headerSection">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header-text">
@@ -31,8 +32,165 @@
         </div>
        </div>  
     </header>
-    <main></main>
-    <footer></footer>
-    
+    <main>
+        <!-- -----------------about---------------- -->
+        <section id="about">
+         <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/aboutme1.png" alt="aboutme" class="aboutme">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm self motivated, energetic and hardworking person with extensive experience.I am looking for a challenging job where I can utilize my knowledge and talents to develop my skills.Specialize in Frontend developer expert in CSS,HTML,Javascript,Reactjs and an Machine learning enthusiast.I am also well versed with MERN stack development.Love to code in Java,software developer is my goal ,I'm bachelor in mathematics.Work in Autonomous vehicle performance testing at AI company in Kolkata.</p>
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>web Development</span><br>Web App Development</li>
+                            <li><span>software Development</span><br>Java/DSA/algorithm</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li ><span>AUTONOMOUS VEHICLE PERFORMANCE TESTING</span><br>I have 2 year experience of autonomous vehicle performance testing in<br> iMerit Technology Services Pvt Ltd at the position of ITES Executive <br> and the role of Junior Specialist - Delivery.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2014-2015</span><br>Madhaymik</li>
+                            <li><span>2015-2017</span><br>Higher Secondary</li>
+                            <li><span>2017-2020</span><br>B.sc in mathematics</li>
+                            <li><span>2022-continue</span><br>full stack web development</li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+         </div>
+        </section>
+<!-- ----------------------service------------------------ -->
+        <section id="services">
+              <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development.</p>
+                        <a href="https://en.wikipedia.org/wiki/Web_design">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>UI design and UX design are two of the most often confused and conflated terms in web and app design. And understandably so. They’re usually placed together in a single term, UI/UX design.</p>
+                        <a href="https://uxplanet.org/what-is-ui-vs-ux-design-and-the-difference-d9113f6612de">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>App Design</h2>
+                        <p>App design is an ongoing process comprising user experience (UX) and user interface (UI) elements. Designers ideate, define solutions, create the app’s flow and structure, and make stylistic choices from colors to fonts. </p>
+                        <a href="https://www.iteratorshq.com/blog/app-design-process-design-a-great-mobile-app/#:~:text=What%20is%20app%20design%3F,on%20user%20research%20and%20feedback.">Learn more</a> 
+                    </div>
+
+                </div>
+              </div>
+        </section>
+<!-- ----------------------portfolio------------------------ -->       
+        <section id="portfolio">
+            <div class="container">
+               <h1 class="sub-title">My Work</h1>
+               <div class="work-list">
+                 <div class="work">
+                    <img src="image/image1.png" alt="image1">
+                    <div class="layer">
+                        <h3>Frontend Coming Soon Page</h3>
+                        <p>This is single template page design of any advertiment for work shop.</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-download"></i></a>
+                    </div>
+                 </div>
+                 <div class="work">
+                    <img src="image/image2.png" alt="image2">
+                    <div class="layer">
+                        <h3>Food menu Card</h3>
+                        <p>This is single food menu card page design making by the help of HTML,CSS and JavaScript for hotel food.</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-download"></i></a>
+                    </div>
+                 </div>
+                 <div class="work">
+                    <img src="image/image3.png" alt="image3">
+                    <div class="layer">
+                        <h3>React Subscription App</h3>
+                        <p>This is React Subscription App page design making by the help of HTML,CSS and JavaScript  of any advertiment for work shop.</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-download"></i></a>
+                    </div>
+                   
+                 </div>
+                 <div class="work">
+                    <img src="image/image8.jpeg" alt="image4">
+                    <div class="layer">
+                        <h3>Verify Account</h3>
+                        <p>This is verify your account page making by the help of HTML,CSS and JavaScript for login your gmail account.</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-download"></i></a>
+                    </div>
+                 </div>
+                 <div class="work">
+                    <img src="image/image10.jpg" alt="image5">
+                    <div class="layer">
+                        <h3>TV Remote</h3>
+                        <p>This is TV Remote page design of making Using Html Css and JavaScript of any advertiment for work shop.</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-download"></i></a>
+                    </div>
+                 </div>
+                 <div class="work">
+                    <img src="image/image11.jpg" alt="image6">
+                    <div class="layer">
+                        <h3>frontend- sidebar</h3>
+                        <p>This is fronted-sidebar page design of Car Specification making Using Html Css and JavaScript</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-download"></i></a>
+                    </div>
+                 </div> 
+               </div>
+               <a href="https://sabahat-123.github.io/HTML---CSS-Mini-Project---HTML-Input-types-Input-attributes-Input-type-search---agqvy4a4dzhc/" class="btn">See More</a>
+            </div>
+        </section>
+<!-- ----------------------contact------------------------ -->  
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>sabahatparveen20@gamil.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>8583885192</p>
+                       <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                       </div>
+                       <a href="image/Sabahat Resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Enter Your Name" required>
+                            <input type="email" name="Email" placeholder="Enter Your Email" required>
+                            <textarea name="message" rows="10" placeholder="Enter Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>Copyright ©2022 All rights reserved | This template is made with<i class="fa-solid fa-heart"></i>by @Sabahat</p>
+        </div>
+    </footer>  
 </body>
 </html>
